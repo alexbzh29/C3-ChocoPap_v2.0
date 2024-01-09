@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Votre Site</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="votre-logo.png" alt="Logo de votre site">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Le reste du contenu de votre site va ici -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+        <div class="footer-content">
+            <div class="left-zone">
+            <h3>CHOCO POP</h3>
+            <p>Logoden biniou degemer mat, an. C’hardeur wirionez vihan ruz, eur. Houad daol darev aozañ, c’henderv. Diouzhtu paotrig Ar Releg-Kerhuon c’hilpenn, bugale. Ker a diouzhtu huanadiñ, c’hilpenn. Koant loar gouzout tagañ, roc’h. Derc’hel iskis gwech da, dir. N’eus e evel  peurvuiañ, dan. Ur Santez-Anna-Wened c’hotoñs c’hwevrer, koulskoude. Meskañ pelec’h pe lien, gwad.</p>
+            </div>
+            <div class="center-zone">
+                <p>Adresse: 51 rue du chocolat , 75000 Paris</p>
+                <p>Téléphone: 01 23 45 67 89 </p>
+                <p>Horaires: 9h00 - 17h00 <br>
+                Du Lundi au Vendredi </p>
+            </div>
+            <div class="right-zone">
+                <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</html>

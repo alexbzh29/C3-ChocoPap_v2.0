@@ -1,0 +1,96 @@
+/* Styles pour les tailles d'écran plus grandes que 600px */
+@media only screen and (min-width: 600px) 
+@media only screen and (max-width: 800px)   
+.footer-content {
+flex-direction: row;
+ }
+    
+body {
+    margin: 0;
+    font-family: 'Averia Serif Libre', serif;
+    font-family: 'Kalam', cursive;
+}
+header {
+    background-color: #2C1E1E;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Ajustez la hauteur du logo selon vos besoins */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style supplémentaire pour les liens au survol */
+nav ul li a:hover {
+    color: #ffd543; /* Changez cette couleur selon vos préférences */
+}
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #b65f28;
+    color: #2c1e1e;
+    padding: 20px 20px;
+    text-align: center;
+    text-align: left
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-zone,
+.center-zone,
+.right-zone {
+    flex: 1;
+}
+
+.center-zone{
+  text-align: center;
+  margin: 5px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon img {
+    width: 30px; /* Ajustez la taille des icônes selon vos besoins */
+    height: 30px;
+}
+
