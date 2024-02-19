@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ChocoPap.css">
+    <title>Choco Pop</title>
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo">
+            <img src="images/logo.png" alt="logo du site">
+        </div>
+        <h1>Choco Pap</h1>
+        <nav>
+            <ul>
+                <li><a href="chocoPap.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!--***********************************************************************-->  
+<!-- Ici commence le carroussel-->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="images/accueil1.jpg" alt="Image 1">
+            <img src="images/accueil2.jpg" alt="Image 2">
+            <img src="images/accueil3.jpg" alt="Image 3">
+    </div>
+    <script src="ChocoPap.js"></script>
+</body>
+<!--********************************************************************-->
+
+<!--Section filtre-->
+<div>   
+    <div class="filtre">
+      <h2>Filtre</h2>
+      <label><input type="checkbox" class="product" value="product1"> Produit 1</label>
+      <label><input type="checkbox" class="product" value="product2"> Produit 2</label>
+      <label><input type="checkbox" class="product" value="product3"> Produit 3</label>
+      <label><input type="checkbox" class="product" value="product4"> Produit 4</label>
+      <label><input type="checkbox" class="product" value="product5"> Produit 5</label>
+      <label><input type="checkbox" class="product" value="product6"> Produit 6</label>
+      <label><input type="checkbox" class="product" value="product7"> Produit 7</label>
+      <label><input type="checkbox" class="product" value="product8"> Produit 8</label>
+      <label><input type="checkbox" class="product" value="product9"> Produit 9</label>
+    </div>
+
+
+    <div class="filtreprix">
+            <h2>Filtre de prix</h2>
+            <label for="minPrice">Prix minimum:</label>
+            <input type="number" id="minPrice" min="0">
+            <label for="maxPrice">Prix maximum:</label>
+            <input type="number" id="maxPrice" min="0">
+            <button onclick="filterProducts()">Filtrer</button>
+    </div>
+</div>
+
+<!-- Ici commence la boutique-->
+<div class="boutique">
+
+<!-- Produit 1 -->
+<div class="produit">
+    <img class="img" src="images/produit1.jpg">
+     <h2>Coeur cerise</h2>
+    <p>Prix: 5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 1', 10.00 )">Ajouter au panier</button>
+</div>
+
+<!-- Produit 2 -->
+<div class="produit">
+    <img src="images/produit2.jpg">
+    <h2>Coeur caramel</h2>
+    <p>Prix: 5.00€</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 2', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 3 -->
+<div class="produit">
+    <img src="images/produit3.jpg">
+    <h2>Coeur grenadine</h2>
+    <p>Prix: 5.00 €</p>
+    <p>Note 4.5</p>
+        <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+   </div>
+
+<!-- Produit 4 -->
+<div class="produit">
+    <img src="images/produit4.jpg">
+    <h2>Coeur blanc</h2>
+    <p>Prix:  5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 4', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 5 -->
+<div class="produit">
+    <img src="images/produit5.jpg">
+    <h2>Choco praliné</h2>
+    <p>Prix: 5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 5', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 6 -->
+<div class="produit">
+    <img src="images/produit6.jpg">
+    <h2>Choco meringue</h2>
+    <p>Prix: 5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 6', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 7 -->
+<div class="produit">
+    <img src="images/produit7.jpg">
+    <h2>Rocher noisette</h2>
+    <p>Prix: 5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 7', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 8 -->
+<div class="produit">
+    <img src="images/produit8.jpg">
+    <h2>Pavé noir café</h2>
+    <p>Prix:  5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 8', 10.00)">Ajouter au panier</button>
+</div>
+
+<!-- Produit 9 -->
+<div class="produit">
+    <img src="images/produit9.jpg">
+    <h2>Boule amande</h2>
+    <p>Prix:  5.00 €</p>
+    <p>Note 4.5</p>
+    <button onclick="ajouterAuPanier('Produit 9', 10.00)">Ajouter au panier</button>
+</div>
+</div>
+
+<!-- Ici commence le pied de page -->
+<footer>
+        <div class="footer-content">
+            <div class="left-zone">
+            <h3>CHOCO POP</h3>
+            <p>Logoden biniou degemer mat, an. C’hardeur wirionez vihan ruz, eur. Houad daol darev aozañ, c’henderv. Diouzhtu paotrig Ar Releg-Kerhuon c’hilpenn, bugale. Ker a diouzhtu huanadiñ, c’hilpenn. Koant loar gouzout tagañ, roc’h. Derc’hel iskis gwech da, dir. N’eus e evel  peurvuiañ, dan. Ur Santez-Anna-Wened c’hotoñs c’hwevrer, koulskoude. Meskañ pelec’h pe lien, gwad.</p>
+            </div>
+            <div class="center-zone">
+                <p>Adresse : 51 rue du chocolat , 75000 Paris</p>
+                <p>Téléphone : 01 23 45 67 89 </p>
+                <p>Horaires : 9h00 - 17h00 <br>
+                Du Lundi au Vendredi </p>
+            </div>
+            <div class="right-zone">
+                <a href="https://www.facebook.com/" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/?lang=fr" class="social-icon"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</html>

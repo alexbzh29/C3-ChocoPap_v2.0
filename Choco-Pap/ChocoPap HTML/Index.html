@@ -18,14 +18,14 @@
         <h1>Choco Pap</h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Boutique</a></li>
-                <li><a href="#">Panier</a></li>
+                <li><a href="Index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="panier.html">Panier</a></li>
             </ul>
         </nav>
     </header>
-    
-
+  <!--***********************************************************************-->  
+<!-- Ici commence le carroussel-->
     <div class="carousel-container">
         <div class="carousel">
             <img src="images/accueil1.jpg" alt="Image 1">
@@ -34,6 +34,34 @@
     </div>
     <script src="ChocoPap.js"></script>
 </body>
+<!--********************************************************************-->
+
+<!--Section filtre-->
+<div>   
+    <div class="filtre">
+      <h2>Filtre</h2>
+      <label><input type="checkbox" class="product" value="product1"> Coeur cerise</label>
+      <br>
+      <label><input type="checkbox" class="product" value="product2"> Coeur caramel</label><br>
+      <label><input type="checkbox" class="product" value="product3"> Coeur grenadine</label><br>
+      <label><input type="checkbox" class="product" value="product4"> Coeur blanc</label><br>
+      <label><input type="checkbox" class="product" value="product5"> Choco praliné</label><br>
+      <label><input type="checkbox" class="product" value="product6"> Choco meringue</label><br>
+      <label><input type="checkbox" class="product" value="product7"> Roché noisette</label><br>
+      <label><input type="checkbox" class="product" value="product8"> Pavé noir café</label><br>
+      <label><input type="checkbox" class="product" value="product9"> Boule amande</label><br>
+    <br>
+    </div>
+
+    <div class="filtreprix">
+            <h2>Filtre de prix</h2>
+            <label for="minPrice">Prix minimum:</label>
+            <input type="number" id="minPrice" min="0">
+            <label for="maxPrice">Prix maximum:</label>
+            <input type="number" id="maxPrice" min="0">
+            <button onclick="filterProducts()">Filtrer</button><br><br>
+    </div>
+</div>
 
 <!-- Ici commence la boutique-->
 <div class="boutique">
@@ -41,17 +69,17 @@
 <!-- Produit 1 -->
 <div class="produit">
     <img class="img" src="images/produit1.jpg">
-     <h2>Nom du Produit 1</h2>
-    <p>Prix: $10.00</p>
+     <h2>Coeur cerise</h2>
+    <p>Prix: 5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 1', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 1', 10.00 )">Ajouter au panier</button>
 </div>
 
 <!-- Produit 2 -->
 <div class="produit">
     <img src="images/produit2.jpg">
-    <h2>Nom du Produit 2</h2>
-    <p>Prix: $10.00</p>
+    <h2>Coeur caramel</h2>
+    <p>Prix: 5.00€</p>
     <p>Note 4.5</p>
     <button onclick="ajouterAuPanier('Produit 2', 10.00)">Ajouter au panier</button>
 </div>
@@ -59,8 +87,8 @@
 <!-- Produit 3 -->
 <div class="produit">
     <img src="images/produit3.jpg">
-    <h2>Nom du Produit 3</h2>
-    <p>Prix: $10.00</p>
+    <h2>Coeur grenadine</h2>
+    <p>Prix: 5.00 €</p>
     <p>Note 4.5</p>
         <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
    </div>
@@ -68,55 +96,55 @@
 <!-- Produit 4 -->
 <div class="produit">
     <img src="images/produit4.jpg">
-    <h2>Nom du Produit 4</h2>
-    <p>Prix: $10.00</p>
+    <h2>Coeur blanc</h2>
+    <p>Prix:  5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 4', 10.00)">Ajouter au panier</button>
 </div>
 
 <!-- Produit 5 -->
 <div class="produit">
     <img src="images/produit5.jpg">
-    <h2>Nom du Produit 5</h2>
-    <p>Prix: $10.00</p>
+    <h2>Choco praliné</h2>
+    <p>Prix: 5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 5', 10.00)">Ajouter au panier</button>
 </div>
 
 <!-- Produit 6 -->
 <div class="produit">
     <img src="images/produit6.jpg">
-    <h2>Nom du Produit 6</h2>
-    <p>Prix: $10.00</p>
+    <h2>Choco meringue</h2>
+    <p>Prix: 5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 6', 10.00)">Ajouter au panier</button>
 </div>
 
 <!-- Produit 7 -->
 <div class="produit">
     <img src="images/produit7.jpg">
-    <h2>Nom du Produit 7</h2>
-    <p>Prix: $10.00</p>
+    <h2>Rocher noisette</h2>
+    <p>Prix: 5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 7', 10.00)">Ajouter au panier</button>
 </div>
 
 <!-- Produit 8 -->
 <div class="produit">
     <img src="images/produit8.jpg">
-    <h2>Nom du Produit 8</h2>
-    <p>Prix: $10.00</p>
+    <h2>Pavé noir café</h2>
+    <p>Prix:  5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 8', 10.00)">Ajouter au panier</button>
 </div>
 
 <!-- Produit 9 -->
 <div class="produit">
     <img src="images/produit9.jpg">
-    <h2>Nom du Produit 9</h2>
-    <p>Prix: $10.00</p>
+    <h2>Boule amande</h2>
+    <p>Prix:  5.00 €</p>
     <p>Note 4.5</p>
-    <button onclick="ajouterAuPanier('Produit 3', 10.00)">Ajouter au panier</button>
+    <button onclick="ajouterAuPanier('Produit 9', 10.00)">Ajouter au panier</button>
 </div>
 </div>
 

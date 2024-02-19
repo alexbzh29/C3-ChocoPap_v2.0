@@ -5,7 +5,7 @@ font-family: 'Kalam'
 
 header {
     background-color: #2C1E1E;
-    color: #fff;
+    color: #b65f28;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -34,10 +34,10 @@ nav ul li a {
 
 /* les liens au survol */
 nav ul li a:hover {
-    color: #dcb012;
+    color: #fdd543;
 } 
 
-
+/*Début du carousel*/
 .carousel-container {
     width: 100%;
     overflow: hidden;
@@ -52,7 +52,23 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
 }
+/*******************************************/
+/* Filtre produits*/
 
+.filtre{
+    color: #55c0cf;
+    background-color: #2c1e1e;
+    padding-left: 20px;
+}
+
+/*Filtreprix*/
+.filtreprix{
+    color: #55c0cf;
+    background-color: #2c1e1e;
+    padding-left: 20px;
+}
+
+/**************************************/
 .boutique {
     display: flex;
     flex-wrap: wrap;
@@ -113,5 +129,9 @@ footer {
 .social-icon img {
     width: 40px; 
     height: 40px;
+}
+
+.adresse{
+    text-decoration: bold;
 }
 

@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
         showImage(currentIndex);
     }
 
-    setInterval(nextSlide, 3000); // Change d'image toutes les 3 secondes (3000 ms)
+    setInterval(nextSlide, 5000); // Change d'image toutes les 3 secondes (3000 ms)
 });
